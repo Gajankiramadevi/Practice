@@ -1,5 +1,2 @@
-var size=['s','M','L','XL'];
-for(var i=0;i<=size.length;i++)
-{
-    console.log(size[i]);
-}
+var size=[32,42,34,54]
+    console.log(size)
