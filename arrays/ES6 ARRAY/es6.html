@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <!-- As a heading -->
+<nav class="navbar navbar-dark bg-dark">
+<table border="1">
+    <thead>
+        <tr>
+        <th>id</th>
+        <th>email</th>
+        </tr>
+    </thead>
+    <tbody id='gn'>
+</tbody>
+    </table>
+    </nav>
+    </body>
+    <script>
+    let contacts=[{"id":1,"email":"ehollingby0@bizjournals.com"},
+{"id":2,"email":"bmccullagh1@unblog.fr"},
+{"id":3,"email":"rbartosch2@reference.com"},
+{"id":4,"email":"zledamun3@goo.gl"},
+{"id":5,"email":"erothschild4@t-online.de"},
+{"id":6,"email":"rmcskin5@yelp.com"},
+{"id":7,"email":"iblencowe6@epa.gov"},
+{"id":8,"email":"sthoumas7@studiopress.com"},
+{"id":9,"email":"ajack8@nydailynews.com"},
+{"id":10,"email":"dshenfisch9@gov.uk"},
+{"id":11,"email":"jspuriera@auda.org.au"},
+{"id":12,"email":"oglasnerb@imgur.com"},
+{"id":13,"email":"fwonforc@dagondesign.com"},
+{"id":14,"email":"rreditd@craigslist.org"},
+{"id":15,"email":"pmelrosse@clickbank.net"},
+{"id":16,"email":"jimmerf@opensource.org"},
+{"id":17,"email":"jrabsong@yale.edu"},
+{"id":18,"email":"acarilloh@kickstarter.com"},
+{"id":19,"email":"candryunini@simplemachines.org"},
+{"id":20,"email":"kbeamsonj@canalblog.com"},
+{"id":21,"email":"glarkbyk@nationalgeographic.com"},
+{"id":22,"email":"rcohrl@lycos.com"},
+{"id":23,"email":"mbuglarm@blogspot.com"},
+{"id":24,"email":"rparamoren@go.com"},
+{"id":25,"email":"tgowthorpeo@tripadvisor.com"},
+{"id":26,"email":"cbeep@gmpg.org"},
+{"id":27,"email":"parmitq@deviantart.com"},
+{"id":28,"email":"tjepensenr@latimes.com"},
+{"id":29,"email":"mlangfields@scribd.com"},
+{"id":30,"email":"staylot@rambler.ru"},
+{"id":31,"email":"sfeechumu@chronoengine.com"},
+{"id":32,"email":"fswanev@tinyurl.com"},
+{"id":33,"email":"pburrasw@mayoclinic.com"},
+{"id":34,"email":"ldeakinsx@hao123.com"},
+{"id":35,"email":"fwillesony@gov.uk"},
+{"id":36,"email":"bfearnehoughz@pinterest.com"},
+{"id":37,"email":"romannion10@wufoo.com"},
+{"id":38,"email":"flendon11@bigcartel.com"},
+{"id":39,"email":"etroughton12@ask.com"},
+{"id":40,"email":"drobertazzi13@e-recht24.de"},
+{"id":41,"email":"wlefwich14@acquirethisname.com"},
+{"id":42,"email":"traine15@umn.edu"},
+{"id":43,"email":"dgullberg16@engadget.com"},
+{"id":44,"email":"bmanagh17@dot.gov"},
+{"id":45,"email":"mturbill18@tuttocitta.it"},
+{"id":46,"email":"ureichartz19@wunderground.com"},
+{"id":47,"email":"itrays1a@si.edu"},
+{"id":48,"email":"reager1b@businesswire.com"},
+{"id":49,"email":"lgillaspy1c@soundcloud.com"},
+{"id":50,"email":"mgrimston1d@xing.com"}]
+let rowdata="";
+contacts.forEach((value)=>{
+    rowdata=rowdata+`<tr><td>${value.id}</td>
+                         <td>${value.email}</td>    
+                      </tr>`
+})
+let tbody=document.getElementById('gn')
+tbody.innerHTML=rowdata;
+      
+</script>
+</html>

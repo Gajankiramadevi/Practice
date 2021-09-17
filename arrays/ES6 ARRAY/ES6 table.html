@@ -15,19 +15,13 @@
                 <th>first_name</th>
                 <th>last_name</th>
                 <th>gender</th>
+                <th>email</th>
             </tr>
         </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>joelle</td>
-                <td>galiford</td>
-                <td>genderqueeue</td>
-
-
-            </tr>
-        </tbody>
+        <tbody id='gn'>
+            </tbody>
     </table>
+    </body>
     <script>
         let contact=[{"id":1,"last_name":"Galiford","first_name":"Joelle","email":"jgaliford0@shutterfly.com","gender":"Genderqueer"},
 {"id":2,"last_name":"de Mendoza","first_name":"Allen","email":"ademendoza1@paginegialle.it","gender":"Polygender"},
@@ -39,10 +33,17 @@
 {"id":8,"last_name":"Rennard","first_name":"Murray","email":"mrennard7@globo.com","gender":"Female"},
 {"id":9,"last_name":"Shuard","first_name":"Valli","email":"vshuard8@smugmug.com","gender":"Genderqueer"},
 {"id":10,"last_name":"Gann","first_name":"Aggy","email":"agann9@altervista.org","gender":"Bigender"}];
-    let new_Id = contacts.map((contact) => {
-        return contact.first_name;
-      });
-      console.log(new_Id);
+
+let rowdata="";
+contact.forEach((value)=>{
+    rowdata=rowdata+`<tr><td>${value.id}</td>
+                        <td>${value.firstname}</td>
+                        <td>${value.lastname} </td>
+                        <td>${value.gender}</td>
+                         <td>${value.email}</td>    
+                      </tr>`
+})
+let tbody=document.getElementById('gn')
+tbody.innerHTML=rowdata;
       </script>
-</body>
 </html>

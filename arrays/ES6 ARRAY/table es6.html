@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<table border="1">
+            <thead>
+                <tr>
+                <th>id</th>
+                <th>first_name</th>
+                <th>last_name</th>
+                <th>email</th>
+                <th>gender</th>
+                </tr>
+            </thead>
+            <tbody id='hi'>
+        </tbody>
+            </table>
+        </body>
+        <script>
+           let data= [{"id":1,"first_name":"Kermie","last_name":"Vinnicombe","email":"kvinnicombe0@gmpg.org","gender":"Genderfluid"},
+{"id":2,"first_name":"Tulley","last_name":"Ferrers","email":"tferrers1@google.cn","gender":"Genderqueer"},
+{"id":3,"first_name":"North","last_name":"De Vaar","email":"ndevaar2@columbia.edu","gender":"Genderqueer"},
+{"id":4,"first_name":"Claudetta","last_name":"Potier","email":"cpotier3@cbsnews.com","gender":"Polygender"},
+{"id":5,"first_name":"Aurie","last_name":"Sowood","email":"asowood4@home.pl","gender":"Agender"},
+{"id":6,"first_name":"Hyacinth","last_name":"Galland","email":"hgalland5@blog.com","gender":"Male"},
+{"id":7,"first_name":"Deedee","last_name":"Wedon","email":"dwedon6@sphinn.com","gender":"Polygender"},
+{"id":8,"first_name":"Aveline","last_name":"Pohling","email":"apohling7@nyu.edu","gender":"Male"},
+{"id":9,"first_name":"Winnie","last_name":"Bleas","email":"wbleas8@oaic.gov.au","gender":"Bigender"},
+{"id":10,"first_name":"Reagan","last_name":"Radmer","email":"rradmer9@reference.com","gender":"Female"},
+{"id":11,"first_name":"Christoper","last_name":"McCloid","email":"cmccloida@mlb.com","gender":"Genderfluid"},
+{"id":12,"first_name":"Shaylyn","last_name":"Turrell","email":"sturrellb@fema.gov","gender":"Genderqueer"},
+{"id":13,"first_name":"Tine","last_name":"Davenhall","email":"tdavenhallc@hao123.com","gender":"Polygender"},
+{"id":14,"first_name":"Karole","last_name":"Potkin","email":"kpotkind@cbsnews.com","gender":"Non-binary"},
+{"id":15,"first_name":"Ethyl","last_name":"Fossey","email":"efosseye@google.ca","gender":"Bigender"},
+{"id":16,"first_name":"Wallie","last_name":"Gomersal","email":"wgomersalf@paginegialle.it","gender":"Genderqueer"},
+{"id":17,"first_name":"Hirsch","last_name":"Candey","email":"hcandeyg@state.gov","gender":"Female"},
+{"id":18,"first_name":"Devan","last_name":"Bischoff","email":"dbischoffh@prnewswire.com","gender":"Male"},
+{"id":19,"first_name":"Pauli","last_name":"Wrixon","email":"pwrixoni@noaa.gov","gender":"Non-binary"},
+{"id":20,"first_name":"Elie","last_name":"de la Valette Parisot","email":"edelavaletteparisotj@nationalgeographic.com","gender":"Genderfluid"},
+{"id":21,"first_name":"Faye","last_name":"Mattis","email":"fmattisk@jigsy.com","gender":"Female"},
+{"id":22,"first_name":"Damian","last_name":"Bader","email":"dbaderl@oakley.com","gender":"Polygender"},
+{"id":23,"first_name":"Padget","last_name":"Downes","email":"pdownesm@cmu.edu","gender":"Female"},
+{"id":24,"first_name":"Michal","last_name":"Whiff","email":"mwhiffn@shinystat.com","gender":"Female"},
+{"id":25,"first_name":"Pete","last_name":"Rendbaek","email":"prendbaeko@sun.com","gender":"Agender"},
+{"id":26,"first_name":"Matilde","last_name":"Miko","email":"mmikop@oakley.com","gender":"Agender"},
+{"id":27,"first_name":"Blinny","last_name":"Colvill","email":"bcolvillq@merriam-webster.com","gender":"Polygender"},
+{"id":28,"first_name":"Thomas","last_name":"Glanister","email":"tglanisterr@acquirethisname.com","gender":"Genderqueer"},
+{"id":29,"first_name":"Ulysses","last_name":"Leuchars","email":"uleucharss@yelp.com","gender":"Bigender"},
+{"id":30,"first_name":"Zea","last_name":"Wiley","email":"zwileyt@abc.net.au","gender":"Genderfluid"},
+{"id":31,"first_name":"Bordy","last_name":"Diviney","email":"bdivineyu@360.cn","gender":"Male"},
+{"id":32,"first_name":"Brandyn","last_name":"Fortin","email":"bfortinv@drupal.org","gender":"Female"},
+{"id":33,"first_name":"Gipsy","last_name":"Radbourne","email":"gradbournew@oracle.com","gender":"Bigender"},
+{"id":34,"first_name":"Erroll","last_name":"Marushak","email":"emarushakx@java.com","gender":"Female"},
+{"id":35,"first_name":"Gerry","last_name":"McCallister","email":"gmccallistery@hibu.com","gender":"Genderqueer"},
+{"id":36,"first_name":"Andy","last_name":"Saill","email":"asaillz@cbsnews.com","gender":"Agender"},
+{"id":37,"first_name":"Armstrong","last_name":"Ferrone","email":"aferrone10@altervista.org","gender":"Genderqueer"},
+{"id":38,"first_name":"Fred","last_name":"Fiorentino","email":"ffiorentino11@blogs.com","gender":"Genderfluid"},
+{"id":39,"first_name":"Rogers","last_name":"Geekin","email":"rgeekin12@icq.com","gender":"Female"},
+{"id":40,"first_name":"Maggie","last_name":"Willoughway","email":"mwilloughway13@sun.com","gender":"Non-binary"},
+{"id":41,"first_name":"Belva","last_name":"Crosbie","email":"bcrosbie14@mapquest.com","gender":"Female"},
+{"id":42,"first_name":"Benni","last_name":"Spain","email":"bspain15@earthlink.net","gender":"Genderfluid"},
+{"id":43,"first_name":"Hollyanne","last_name":"McPherson","email":"hmcpherson16@fema.gov","gender":"Polygender"},
+{"id":44,"first_name":"Iggie","last_name":"Paniman","email":"ipaniman17@discuz.net","gender":"Male"},
+{"id":45,"first_name":"Brnaby","last_name":"McGoldrick","email":"bmcgoldrick18@theglobeandmail.com","gender":"Polygender"},
+{"id":46,"first_name":"Rafferty","last_name":"Adcock","email":"radcock19@xing.com","gender":"Male"},
+{"id":47,"first_name":"Margaux","last_name":"Lyon","email":"mlyon1a@soup.io","gender":"Non-binary"},
+{"id":48,"first_name":"Ardelis","last_name":"De Cleyne","email":"adecleyne1b@1688.com","gender":"Bigender"},
+{"id":49,"first_name":"Washington","last_name":"Tinto","email":"wtinto1c@patch.com","gender":"Polygender"},
+{"id":50,"first_name":"Clem","last_name":"Cornelius","email":"ccornelius1d@hp.com","gender":"Polygender"}]
+            let rowdata="";
+            data.forEach((rama)=>{
+                rowdata=rowdata+`<tr><td>${rama.id}</td>
+                    <td>${rama.first_name}</td>
+                    <td>${rama.last_name}</td>
+                    <td>${rama.email}</td>
+                    <td>${rama.gender}</td
+                        </tr>`
+            })
+            let tbody=document.getElementById('hi')
+            tbody.innerHTML=rowdata
+        </script>
+</html>
